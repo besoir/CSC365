@@ -21,6 +21,9 @@ public class Main {
       while((inputLine = in.readLine()) != null)
           System.out.println(inputLine);
       in.close();
+
+      //HashTable harrison = new HashTable(123, "mikel");
+      //System.out.println(harrison.hash("mikel"));
     }
   }
 
