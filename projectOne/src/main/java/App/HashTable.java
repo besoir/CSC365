@@ -1,3 +1,4 @@
+package App;
 public class HashTable {
   private HashNode hn;
   private class HashNode {
