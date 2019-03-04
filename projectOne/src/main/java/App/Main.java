@@ -12,7 +12,8 @@ import java.util.ArrayList;
 
 public class Main {
   public static void main(String[] args) throws Exception{
-    File savedWebsites = new File("websites.txt");
+    //System.out.println(System.getProperty("user.dir"));
+    File savedWebsites = new File("../src/main/resources/websites.txt");
     List<String> websites = getWebsites(savedWebsites);
     for(String website: websites) {
       URL url = new URL(website);
