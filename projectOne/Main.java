@@ -15,18 +15,20 @@ public class Main {
     //System.out.println(System.getProperty("user.dir"));
     File savedWebsites = new File("../src/main/resources/websites.txt");
     List<String> websites = getWebsites(savedWebsites);
-    for(String website: websites) {
-      URL url = new URL(website);
-      URLConnection connection = url.openConnection();
-      BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-      String inputLine;
-      while((inputLine = in.readLine()) != null)
-          System.out.println(inputLine);
-      in.close();
+    Parser p = new Parser(websites);
+    p.getStuff();
+    //for(String website: websites) {
+      //URL url = new URL(website);
+      //URLConnection connection = url.openConnection();
+      //BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+      //String inputLine;
+      //while((inputLine = in.readLine()) != null)
+          //System.out.println(inputLine);
+      //in.close();
 
       //HashTable harrison = new HashTable(123, "mikel");
       //System.out.println(harrison.hash("mikel"));
-    }
+    //}
   }
 
   /*

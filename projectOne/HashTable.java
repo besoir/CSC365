@@ -54,7 +54,7 @@ public class HashTable {
     }
   }
 
-  //public void resize()
+  //public void resize() {}
 
   public long hash(String str) {
     return str2ascii(str);
